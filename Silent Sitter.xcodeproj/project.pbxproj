@@ -3278,7 +3278,7 @@
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter;
 				PRODUCT_NAME = "Silent Sitter";
 				PROVISIONING_PROFILE = "6146c033-8ec2-4263-87b4-79dbf74d1d17";
 				PROVISIONING_PROFILE_SPECIFIER = "Jendrzej Szemis";
@@ -3292,13 +3292,16 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
+				DEVELOPMENT_TEAM = 7BNB84XMCE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter;
 				PRODUCT_NAME = "Silent Sitter";
+				PROVISIONING_PROFILE = "b8484a69-b1de-40a6-b518-cf21531b2bf3";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Silent Sitter Distribution Profile";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -3338,14 +3341,16 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
+				DEVELOPMENT_TEAM = 7BNB84XMCE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter;
 				PRODUCT_NAME = "Silent Sitter";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b8484a69-b1de-40a6-b518-cf21531b2bf3";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Silent Sitter Distribution Profile";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				WRAPPER_EXTENSION = app;
 			};
