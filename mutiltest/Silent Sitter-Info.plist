@@ -14,6 +14,7 @@
 	<array>
 		<string>Icon.png</string>
 		<string>Icon@2x.png</string>
+		<string>Icon-60@2x.png</string>
 		<string>iTunesArtwork.png</string>
 		<string>iTunesArtwork@2x.png</string>
 	</array>
