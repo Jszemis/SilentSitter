@@ -297,7 +297,6 @@
     
     [spaceshipAccelerometer startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
         
-        NSLog(@"spaceshipAccelerometer");
             float rocketHeight = Rocket.frame.size.height / 2;
             float rocketWidth = Rocket.frame.size.width / 2;
         
