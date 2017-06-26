@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface FlyingBee : UIImageView{
+@interface FlyingBee : UIImageView <CAAnimationDelegate>
+{
 
     NSTimer *FlyingBeeTimer;
     NSTimer *FlyingBeeAnimationTimer;

@@ -121,7 +121,7 @@
                 break;
         }
         
-         double beeFlyDistance = sqrt(pow(fabs(beeCentreX - beeFinalX),2) + pow(fabs(beeCentreY - beeFinalY),2));
+         double beeFlyDistance = sqrt(pow(fabs((float)beeCentreX - (float)beeFinalX),2) + pow(fabs((float)beeCentreY - (float)beeFinalY),2));
          if(beeFlyDistance < 0.1) beeFlyDistance = 0.1;
          duration = beeFlyDistance/60;
         

@@ -180,7 +180,7 @@
         lineAnimation.toValue   = [NSNumber numberWithFloat:1.0f];
         [lineDraw addAnimation:lineAnimation forKey:@"lineAnimation"];
 
-        hookLayer = [CALayer layer];
+        hookLayer = [CAShapeLayer layer];
         hookLayer.bounds = CGRectMake(-10, -10, 24, 16);
         hookLayer.position = CGPointMake(-10, -10);
         hookLayer.contents = (id)([UIImage imageNamed:@"hook.png"].CGImage);
@@ -190,9 +190,9 @@
         hookAnimation.path = linePath.CGPath;
         hookAnimation.rotationMode = kCAAnimationRotateAuto;
         hookAnimation.duration = lineDuration;
-        hookAnimation.calculationMode = kCAAnimationPaced;       
+        hookAnimation.calculationMode = kCAAnimationLinear;
         [hookLayer addAnimation:hookAnimation forKey:@"hookAnimation"];
-        
+
         [NSTimer scheduledTimerWithTimeInterval:lineDuration + 0.1
                                                          target:self
                                                        selector:@selector(LineLands)
