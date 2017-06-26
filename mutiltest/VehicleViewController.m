@@ -293,7 +293,7 @@
     ladder.frame = CGRectMake(VehicleX, VehicleY, 12, 64);
     [self.view addSubview:ladder];
     
-    float LadderDownDuration = 0.8;
+    float LadderDownDuration = 0.5;
     NSArray *ladderDown;
     ladderDown = [[NSArray alloc] initWithObjects:
                [UIImage imageNamed:@"LadderDown-frame4.png"],
@@ -309,7 +309,7 @@
     [ladder setAnimationRepeatCount:1];
     [ladder startAnimating];
        
-    float ShadowDownDuration = 0.8;
+    float ShadowDownDuration = 0.5;
     NSArray *shadowDown;
     shadowDown = [[NSArray alloc] initWithObjects:
                [UIImage imageNamed:@"Shadow1-frame1.png"],
@@ -329,7 +329,7 @@
     [Shadow setAnimationRepeatCount:1];
     [Shadow startAnimating];
     
-    [NSTimer scheduledTimerWithTimeInterval:0.78
+    [NSTimer scheduledTimerWithTimeInterval:0.5
                                      target:self
                                    selector:@selector(UpLadder)
                                    userInfo:nil
@@ -349,7 +349,7 @@
     ladder.frame = CGRectMake(VehicleX, VehicleY, 12, 64);
     [self.view addSubview:ladder];
     
-    float LadderUpDuration = 0.8;
+    float LadderUpDuration = 0.5;
     NSArray *ladderUp;
     ladderUp = [[NSArray alloc] initWithObjects:
                [UIImage imageNamed:@"LadderUp-frame1.png"],
@@ -368,7 +368,7 @@
     
  
     
-    float ShadowUpDuration = 0.8;
+    float ShadowUpDuration = 0.5;
     NSArray *shadowUp;
     shadowUp = [[NSArray alloc] initWithObjects:
                   [UIImage imageNamed:@"Shadow4-frame1.png"],
@@ -389,7 +389,7 @@
     [Shadow setAnimationRepeatCount:1];
     [Shadow startAnimating];
     
-    [NSTimer scheduledTimerWithTimeInterval:0.8
+    [NSTimer scheduledTimerWithTimeInterval:0.5
                                      target:self
                                    selector:@selector(resetvehicleCollisionFlag)
                                    userInfo:nil
@@ -426,7 +426,7 @@
       //
         self.view.userInteractionEnabled = NO;
         
-        [NSTimer scheduledTimerWithTimeInterval:3
+        [NSTimer scheduledTimerWithTimeInterval:1
                                          target:self
                                        selector:@selector(swapViews)
                                        userInfo:nil
