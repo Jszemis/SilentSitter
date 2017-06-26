@@ -714,6 +714,7 @@
 		8AFCF85D16DDD26A00340EAE /* HorsePrincess-Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFCF83916DDD26A00340EAE /* HorsePrincess-Stop.png */; };
 		8AFCF85F16DDD50700340EAE /* HorseKnight-Frame03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFCF85E16DDD50700340EAE /* HorseKnight-Frame03.png */; };
 		A914FD0B1F008B5000E3B7CE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A914FD0A1F008B5000E3B7CE /* CoreMotion.framework */; };
+		A9ADE8EA1F013E2C00561D1B /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9ADE8E91F013E2C00561D1B /* Icon-60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1457,6 +1458,7 @@
 		8AFCF83916DDD26A00340EAE /* HorsePrincess-Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorsePrincess-Stop.png"; sourceTree = "<group>"; };
 		8AFCF85E16DDD50700340EAE /* HorseKnight-Frame03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorseKnight-Frame03.png"; sourceTree = "<group>"; };
 		A914FD0A1F008B5000E3B7CE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A9ADE8E91F013E2C00561D1B /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1849,6 +1851,7 @@
 				8AE2429316F167C300B2504C /* Default@2x.png */,
 				8A50C858166DBFB1000D8E2F /* Icon.png */,
 				8A50C85A166DBFB5000D8E2F /* Icon@2x.png */,
+				A9ADE8E91F013E2C00561D1B /* Icon-60@2x.png */,
 				8A20936B1675BF07007AA346 /* iTunesArtwork.png */,
 				8A20936C1675BF07007AA346 /* iTunesArtwork@2x.png */,
 				8A84C4BB15A16B5300E52D79 /* mutiltest */,
@@ -3133,6 +3136,7 @@
 				8AF40BB2173A0CD200F9A072 /* Shutter-Frame14.png in Resources */,
 				8AF40BB3173A0CD200F9A072 /* Shutter-Frame15.png in Resources */,
 				8AF40BB4173A0CD200F9A072 /* Shutter-Frame16.png in Resources */,
+				A9ADE8EA1F013E2C00561D1B /* Icon-60@2x.png in Resources */,
 				8AF40BB5173A0CD200F9A072 /* Shutter-Frame17.png in Resources */,
 				8AF40BB6173A0CD200F9A072 /* Shutter-Frame18.png in Resources */,
 				8AF40BB8173A136600F9A072 /* Blind.png in Resources */,
@@ -3271,6 +3275,7 @@
 		8A84C4D015A16B5300E52D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7BNB84XMCE;
@@ -3290,6 +3295,7 @@
 		8A84C4D115A16B5300E52D79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
 				DEVELOPMENT_TEAM = 7BNB84XMCE;
@@ -3338,6 +3344,7 @@
 		8AB70FBD16B11B0300EE0814 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
