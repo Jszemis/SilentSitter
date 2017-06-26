@@ -160,7 +160,7 @@
         [sheepLocal setDelegate:self];
     }
     
-    _sheepJumpCount = [SheepCollection count];
+    _sheepJumpCount = (int)[SheepCollection count];
     
     [NSTimer scheduledTimerWithTimeInterval:0.5
                                      target:self

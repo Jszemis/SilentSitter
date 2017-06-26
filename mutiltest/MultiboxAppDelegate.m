@@ -217,7 +217,7 @@
     [_viewArray1 addObject:@"Race"];
     [_viewArray1 addObject:@"House"];
     
-    totalScreenNumber = ([_viewArray1 count]);
+    totalScreenNumber = ((int)[_viewArray1 count]);
 
     [self switchCover];
     

@@ -430,7 +430,7 @@
 
     [self->viewGesturesArray addObject:@"Start"];
     int x;
-    for(x=[viewWindowsArray count]; x>0; x--){
+    for(x=(int)[viewWindowsArray count]; x>0; x--){
     
     int randomIndex = (arc4random() % [viewWindowsArray count]);
         

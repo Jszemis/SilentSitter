@@ -153,7 +153,7 @@
 
 -(int)getPresent:(Present *)presentView{
     
-    int totalPresentNumber = ([_presentArray count]);
+    int totalPresentNumber = ((int)[_presentArray count]);
     int RandomPresent = arc4random() % totalPresentNumber;
 
     int returnPresent = [[_presentArray objectAtIndex:RandomPresent] intValue];

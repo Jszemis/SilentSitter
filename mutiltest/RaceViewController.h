@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Horse.h"
 
-@interface RaceViewController : UIViewController{
+@interface RaceViewController : UIViewController <CAAnimationDelegate>{
         CADisplayLink *racegameloop;
         CADisplayLink *horsegameloop;
         int disableGesture;
