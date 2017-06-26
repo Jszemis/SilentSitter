@@ -18,7 +18,8 @@
 
 @end
 
-@interface Present : UIButton{
+@interface Present : UIButton <CAAnimationDelegate>
+{
     int shakeCount;
 }
 

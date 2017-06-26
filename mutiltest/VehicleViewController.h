@@ -14,7 +14,7 @@
 #define degreesToRadians(x) (M_PI * x / 180.0)
 #define P(x,y) CGPointMake(x, y)
 
-@interface VehicleViewController : UIViewController <UIGestureRecognizerDelegate> {
+@interface VehicleViewController : UIViewController <UIGestureRecognizerDelegate, CAAnimationDelegate> {
     int widgetCount;
     int vehicleCollisionFlag;
     int vehicleMoveFlag;

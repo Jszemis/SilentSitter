@@ -89,7 +89,7 @@
         int pieceCount = i/2;
     
         CAShapeLayer *pieceLayer;
-        pieceLayer = [CALayer layer];
+        pieceLayer = [CAShapeLayer layer];
         pieceLayer.bounds = CGRectMake(presentInitialX, presentInitialY, 40,40);
         pieceLayer.position = CGPointMake(presentInitialX, presentInitialY);
         pieceLayer.contents = (id)([UIImage imageNamed:[NSString stringWithFormat:@"%@%@%i%@",self.titleLabel.text,@"piece",pieceCount,@".png"]].CGImage);
@@ -196,7 +196,7 @@
     int randomPresent = [delegate getPresent:self];
     
     CAShapeLayer *presentLayer;
-    presentLayer = [CALayer layer];
+    presentLayer = [CAShapeLayer layer];
     presentLayer.bounds = CGRectMake(presentInitialX, presentInitialY, 80,80);
 //presentLayer.bounds = CGRectMake(presentInitialX, presentInitialY, 40,40);
     presentLayer.position = CGPointMake(presentInitialX, presentInitialY);

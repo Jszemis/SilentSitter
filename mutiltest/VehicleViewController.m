@@ -9,7 +9,7 @@
 #import "VehicleViewController.h"
 #import "MultiboxAppDelegate.h"
 
-@interface VehicleViewController ()
+@interface VehicleViewController  ()
 
 @end
 

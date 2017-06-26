@@ -117,7 +117,7 @@
         int starCounter = arc4random() % 10;
     
         CAShapeLayer *bulbLayer;
-        bulbLayer = [CALayer layer];
+        bulbLayer = [CAShapeLayer layer];
         bulbLayer.bounds = CGRectMake(bulbpointX, bulbpointY, 14,14);
         bulbLayer.position = CGPointMake(bulbpointX, bulbpointY);
         bulbLayer.contents = (id)([UIImage imageNamed:[NSString stringWithFormat:@"christmasbulb%i%@",starCounter,@".png"]].CGImage);

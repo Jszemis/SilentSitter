@@ -16,7 +16,7 @@
 @class FlyingBee;
 @class HorizontalBlind;
 
-@interface HouseViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface HouseViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate, CAAnimationDelegate>
 
 {
 	IBOutlet UIView *previewView;
