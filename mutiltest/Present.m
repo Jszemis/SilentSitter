@@ -224,6 +224,8 @@
     [presentLayer addAnimation: presentAnimation forKey: @"presentAnimation"];
     UIImage *clearpresent  = [UIImage imageNamed:@"christmaslightclear.png"];
     [self.imageView setImage:clearpresent];
+    [self setImage:clearpresent forState:UIControlStateNormal];
+    [self setTitle:@"" forState:UIControlStateNormal];
     
     [delegate changePresentCount:self];
     
