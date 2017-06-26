@@ -80,7 +80,7 @@
         int createStarRandomY = arc4random() % 481;
     
         CAShapeLayer *starLayer;
-        starLayer = [CALayer layer];
+        starLayer = [CAShapeLayer layer];
         starLayer.bounds = CGRectMake(createStarRandomX, createStarRandomY, speedStar,speedStar);
         starLayer.position = CGPointMake(createStarRandomX, createStarRandomY);
         starLayer.contents = (id)([UIImage imageNamed:@"star.png"].CGImage);
@@ -175,7 +175,7 @@
         int createStarRandomX = arc4random() % 321;
         
         CAShapeLayer *starLayer;
-        starLayer = [CALayer layer];
+        starLayer = [CAShapeLayer layer];
         starLayer.bounds = CGRectMake(createStarRandomX, -10, speedStar,speedStar);
         starLayer.position = CGPointMake(createStarRandomX, 0);
         starLayer.contents = (id)([UIImage imageNamed:@"star.png"].CGImage);

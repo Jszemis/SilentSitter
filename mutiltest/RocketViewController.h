@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface RocketViewController : UIViewController
-<UIAccelerometerDelegate> {
+<UIAccelerometerDelegate, CAAnimationDelegate> {
     
     CAShapeLayer *arrivePlanet;
     CGPoint delta;

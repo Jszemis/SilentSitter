@@ -20,7 +20,8 @@
     
 @end
 
-@interface Bee : UIButton{
+@interface Bee : UIButton <CAAnimationDelegate>
+{
     NSTimer *beeHoverTimer;
     NSTimer *beeFlapWingsTimer;
     float beeX1,beeX2,beeX3;

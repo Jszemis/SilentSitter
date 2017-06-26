@@ -17,7 +17,8 @@
 
 @end
 
-@interface Sheep : UIButton{
+@interface Sheep : UIButton <CAAnimationDelegate>
+{
     NSTimer *sheepTimer;
 }
 

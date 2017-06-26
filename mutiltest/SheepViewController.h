@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "Sheep.h"
 
-@interface SheepViewController : UIViewController <SheepDelegate>
+@interface SheepViewController : UIViewController <SheepDelegate, CAAnimationDelegate>
 
 @property (nonatomic,strong) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic,strong) IBOutlet UIImageView *foregroundImage;

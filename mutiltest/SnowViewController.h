@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SnowViewController : UIViewController <UIGestureRecognizerDelegate> {
+@interface SnowViewController : UIViewController <UIGestureRecognizerDelegate, CAAnimationDelegate> {
     float skierX;
     int startSkiing;
     int skijumpStatus;
