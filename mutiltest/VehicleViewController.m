@@ -243,7 +243,7 @@
             int WidgetX = WidgetLocalFrame.origin.x;
             int WidgetY = WidgetLocalFrame.origin.y;
             
-            int moveduration = 1;
+            NSTimeInterval moveduration = 0.3;
 
             CGMutablePathRef aPath;
             aPath = CGPathCreateMutable();
@@ -268,7 +268,7 @@
             [UIView setAnimationDuration: moveduration];
             [UIView commitAnimations];
             
-            [NSTimer scheduledTimerWithTimeInterval:1
+            [NSTimer scheduledTimerWithTimeInterval:moveduration
                                              target:self
                                            selector:@selector(DownLadder)
                                            userInfo:nil

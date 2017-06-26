@@ -73,7 +73,7 @@
 
 -(void)WidgetRemove{
     
-    [NSTimer scheduledTimerWithTimeInterval:1.8
+    [NSTimer scheduledTimerWithTimeInterval:0.8
                                         target:self
                                         selector:@selector(WidgetRemoveDelay)
                                         userInfo:nil
