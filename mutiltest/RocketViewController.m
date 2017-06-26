@@ -292,9 +292,37 @@
 
 -(void)startAccelerometer{
     
-    spaceshipAccelerometer = [UIAccelerometer sharedAccelerometer];
-    spaceshipAccelerometer.delegate = self;
-    spaceshipAccelerometer.updateInterval = 0.015;
+    spaceshipAccelerometer = [[CMMotionManager alloc] init];
+    spaceshipAccelerometer.accelerometerUpdateInterval = 0.015;
+    
+    [spaceshipAccelerometer startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+        
+        NSLog(@"spaceshipAccelerometer");
+            float rocketHeight = Rocket.frame.size.height / 2;
+            float rocketWidth = Rocket.frame.size.width / 2;
+        
+            if (accelerometerData.acceleration.x>0) delta.x = 1; else delta.x = -1;
+            if (accelerometerData.acceleration.y>0) delta.y = -1; else delta.y = 1;
+        
+            if (Rocket.center.x > 320 - rocketWidth && delta.x == 1){
+                delta.x = 0;
+            }
+        
+            if (Rocket.center.x < rocketWidth && delta.x == -1) {
+                delta.x = 0;
+            }
+        
+            if (Rocket.center.y > 465 - rocketHeight && delta.y == 1){
+                delta.y = 0;
+            }
+        
+            if (Rocket.center.y < 200 && delta.y == -1){
+                delta.y = 0;
+            }
+            
+            Rocket.center = CGPointMake(Rocket.center.x + delta.x,Rocket.center.y + delta.y);
+    }];
+    
     
     CGMutablePathRef aPath;
     CGFloat astronautjumpDuration = 0.1;
@@ -346,34 +374,34 @@
     
 }
 
-- (void)accelerometer:(UIAccelerometer *)acel
-        didAccelerate:(UIAcceleration *)acceleration {
-    
-    float rocketHeight = Rocket.frame.size.height / 2;
-    float rocketWidth = Rocket.frame.size.width / 2;
-   
-    if (acceleration.x>0) delta.x = 1; else delta.x = -1;
-    if (acceleration.y>0) delta.y = -1; else delta.y = 1;
-
-    if (Rocket.center.x > 320 - rocketWidth && delta.x == 1){
-        delta.x = 0;
-    }
-        
-    if (Rocket.center.x < rocketWidth && delta.x == -1) {
-        delta.x = 0;
-    }
-    
-    if (Rocket.center.y > 465 - rocketHeight && delta.y == 1){
-        delta.y = 0;
-    }
-    
-    if (Rocket.center.y < 200 && delta.y == -1){
-        delta.y = 0;
-    }
-    
-    Rocket.center = CGPointMake(Rocket.center.x + delta.x,Rocket.center.y + delta.y);
-
-}
+//- (void)accelerometer:(UIAccelerometer *)acel
+//        didAccelerate:(UIAcceleration *)acceleration {
+//    
+//    float rocketHeight = Rocket.frame.size.height / 2;
+//    float rocketWidth = Rocket.frame.size.width / 2;
+//   
+//    if (acceleration.x>0) delta.x = 1; else delta.x = -1;
+//    if (acceleration.y>0) delta.y = -1; else delta.y = 1;
+//
+//    if (Rocket.center.x > 320 - rocketWidth && delta.x == 1){
+//        delta.x = 0;
+//    }
+//        
+//    if (Rocket.center.x < rocketWidth && delta.x == -1) {
+//        delta.x = 0;
+//    }
+//    
+//    if (Rocket.center.y > 465 - rocketHeight && delta.y == 1){
+//        delta.y = 0;
+//    }
+//    
+//    if (Rocket.center.y < 200 && delta.y == -1){
+//        delta.y = 0;
+//    }
+//    
+//    Rocket.center = CGPointMake(Rocket.center.x + delta.x,Rocket.center.y + delta.y);
+//
+//}
 
 -(void)RocketLandscape:(NSString*)planetColour{
 
@@ -479,7 +507,7 @@
 
 -(void)spaceshipLands:(id)sender{
  
-    [spaceshipAccelerometer setDelegate:nil];
+    [spaceshipAccelerometer stopAccelerometerUpdates];
     
     CGMutablePathRef landingPath;
     CGFloat landingDuration = 2;

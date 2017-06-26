@@ -838,7 +838,6 @@
     self.view.userInteractionEnabled = NO;
     
     [session stopRunning];
-    dispatch_release(videoDataOutputQueue);
     
     [_FlyingBee StopFlying];
     

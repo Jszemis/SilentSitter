@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface RocketViewController : UIViewController
 <UIAccelerometerDelegate, CAAnimationDelegate> {
@@ -17,7 +18,7 @@
     CGPoint translation;
     int starCounter;
     NSString *planetMainColour;
-    UIAccelerometer *spaceshipAccelerometer;
+    CMMotionManager *spaceshipAccelerometer;
     NSTimer *zoomSpaceshipTimer;
     NSTimer *planetArriveTimer;
     NSTimer *createStarsTimer;
@@ -35,8 +36,8 @@
 
 -(void)createStars;
 -(void)startAccelerometer;
-- (void)accelerometer:(UIAccelerometer *)acel
-        didAccelerate:(UIAcceleration *)acceleration;
+//- (void)accelerometer:(UIAccelerometer *)acel
+//        didAccelerate:(UIAcceleration *)acceleration;
 -(void)RocketLandscape:(NSString*)planetColour;
 -(void)planetEarthLeave:(id)sender;
 -(void)planetArrive:(id)sender;

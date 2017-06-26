@@ -713,6 +713,7 @@
 		8AFCF85C16DDD26A00340EAE /* HorsePrincess-Frame08.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFCF83816DDD26A00340EAE /* HorsePrincess-Frame08.png */; };
 		8AFCF85D16DDD26A00340EAE /* HorsePrincess-Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFCF83916DDD26A00340EAE /* HorsePrincess-Stop.png */; };
 		8AFCF85F16DDD50700340EAE /* HorseKnight-Frame03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFCF85E16DDD50700340EAE /* HorseKnight-Frame03.png */; };
+		A914FD0B1F008B5000E3B7CE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A914FD0A1F008B5000E3B7CE /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1455,6 +1456,7 @@
 		8AFCF83816DDD26A00340EAE /* HorsePrincess-Frame08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorsePrincess-Frame08.png"; sourceTree = "<group>"; };
 		8AFCF83916DDD26A00340EAE /* HorsePrincess-Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorsePrincess-Stop.png"; sourceTree = "<group>"; };
 		8AFCF85E16DDD50700340EAE /* HorseKnight-Frame03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorseKnight-Frame03.png"; sourceTree = "<group>"; };
+		A914FD0A1F008B5000E3B7CE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1462,6 +1464,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A914FD0B1F008B5000E3B7CE /* CoreMotion.framework in Frameworks */,
 				8AE5C7861717A094003D7DCA /* AVFoundation.framework in Frameworks */,
 				8AA903A815A3E8F90063D3F9 /* QuartzCore.framework in Frameworks */,
 				8A84C4B615A16B5300E52D79 /* UIKit.framework in Frameworks */,
@@ -1865,6 +1868,7 @@
 		8A84C4B415A16B5300E52D79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A914FD0A1F008B5000E3B7CE /* CoreMotion.framework */,
 				8AA903A715A3E8F90063D3F9 /* QuartzCore.framework */,
 				8A84C4B515A16B5300E52D79 /* UIKit.framework */,
 				8A84C4B715A16B5300E52D79 /* Foundation.framework */,
@@ -2454,6 +2458,11 @@
 			attributes = {
 				CLASSPREFIX = Multibox;
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					8A84C4B015A16B5300E52D79 = {
+						DevelopmentTeam = 7BNB84XMCE;
+					};
+				};
 			};
 			buildConfigurationList = 8A84C4AB15A16B5300E52D79 /* Build configuration list for PBXProject "Silent Sitter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3263,11 +3272,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7BNB84XMCE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
 				PRODUCT_NAME = "Silent Sitter";
+				PROVISIONING_PROFILE = "6146c033-8ec2-4263-87b4-79dbf74d1d17";
+				PROVISIONING_PROFILE_SPECIFIER = "Jendrzej Szemis";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -3281,7 +3295,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
 				PRODUCT_NAME = "Silent Sitter";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -3326,7 +3341,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mutiltest/Silent Sitter-Prefix.pch";
 				INFOPLIST_FILE = "mutiltest/Silent Sitter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.cmonsterstudios.silentsitter.temp;
 				PRODUCT_NAME = "Silent Sitter";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
