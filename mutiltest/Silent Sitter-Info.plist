@@ -64,6 +64,8 @@
 	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>NSCameraUsageDescription</key>
 	<string>Show camera input on screen</string>
 	<key>UISupportedInterfaceOrientations</key>
