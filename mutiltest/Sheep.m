@@ -116,6 +116,8 @@
 
 -(void)sheepHeadDown{
     
+    [self setImage:[UIImage imageNamed:@"sheepeat-frame06.png"] forState:UIControlStateNormal];
+    
     float sheepHeadDownDuration = 0.6;
     NSArray *sheepHeadDown;
     sheepHeadDown = [[NSArray alloc] initWithObjects:
@@ -229,6 +231,8 @@
 
 -(void)sheepHeadUp{
     
+    [self setImage:[UIImage imageNamed:@"sheepeat-frame12.png"] forState:UIControlStateNormal];
+    
     float sheepHeadUpDuration = 0.6;
     NSArray *sheepHeadUp;
     sheepHeadUp = [[NSArray alloc] initWithObjects:        
@@ -260,6 +264,9 @@
     
 -(void)sheepGoToSleep{
     
+    
+    [self setImage:[UIImage imageNamed:@"sheepsleep-frame09.png"] forState:UIControlStateNormal];
+    
     float sheepGoToSleepDuration = 0.6;
     NSArray *sheepGoToSleep;
     sheepGoToSleep = [[NSArray alloc] initWithObjects:        
@@ -288,6 +295,8 @@
 }
 
 -(void)sheepSleep{
+    
+    
     
     float sheepSleepDuration = 4;
     NSArray *sheepSleep;
