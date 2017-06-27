@@ -260,7 +260,9 @@
         }
     }
     
-    if(FinalHorseX == pHorse.center.x && FinalHorseY == pHorse.center.y){
+    
+    
+    if(FinalHorseX >= pHorse.center.x && FinalHorseY >= pHorse.center.y){
         
         [pHorse.imageView stopAnimating];
         [pHorse HorseStop];
