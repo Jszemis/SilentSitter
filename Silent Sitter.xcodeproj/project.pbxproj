@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658AF9E221EDFFAD008AEFBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658AF9E121EDFFAD008AEFBB /* Images.xcassets */; };
 		8A01EBFD164757F400FA43F9 /* cosmonaut-frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01EBF7164757F400FA43F9 /* cosmonaut-frame1.png */; };
 		8A01EBFE164757F400FA43F9 /* cosmonaut-frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01EBF8164757F400FA43F9 /* cosmonaut-frame2.png */; };
 		8A01EBFF164757F400FA43F9 /* cosmonaut-frame3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01EBF9164757F400FA43F9 /* cosmonaut-frame3.png */; };
@@ -718,6 +719,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		658AF9E121EDFFAD008AEFBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Silent Sitter/Images.xcassets"; sourceTree = "<group>"; };
 		8A01EBF7164757F400FA43F9 /* cosmonaut-frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmonaut-frame1.png"; sourceTree = "<group>"; };
 		8A01EBF8164757F400FA43F9 /* cosmonaut-frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmonaut-frame2.png"; sourceTree = "<group>"; };
 		8A01EBF9164757F400FA43F9 /* cosmonaut-frame3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosmonaut-frame3.png"; sourceTree = "<group>"; };
@@ -1845,6 +1847,7 @@
 		8A84C4A615A16B5300E52D79 = {
 			isa = PBXGroup;
 			children = (
+				658AF9E121EDFFAD008AEFBB /* Images.xcassets */,
 				8AE5C7851717A094003D7DCA /* AVFoundation.framework */,
 				8AE2429116F167C300B2504C /* Default-568h@2x.png */,
 				8AE2429216F167C300B2504C /* Default.png */,
@@ -2738,6 +2741,7 @@
 				8A21F4AB1640EE2F00A40518 /* spaceship-Frame05.png in Resources */,
 				8A21F4AC1640EE2F00A40518 /* spaceship-Frame06.png in Resources */,
 				8A21F4B51640F0BC00A40518 /* astronaut-frame1.png in Resources */,
+				658AF9E221EDFFAD008AEFBB /* Images.xcassets in Resources */,
 				8A21F4B61640F0BC00A40518 /* astronaut-frame2.png in Resources */,
 				8A21F4B71640F0BC00A40518 /* astronaut-frame3.png in Resources */,
 				8A21F4B81640F0BC00A40518 /* astronaut-frame4.png in Resources */,
@@ -3276,6 +3280,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7BNB84XMCE;
@@ -3296,6 +3302,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
 				DEVELOPMENT_TEAM = 7BNB84XMCE;
@@ -3345,6 +3353,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: The trustee for the Szemis Family Trust (7BNB84XMCE)";
